@@ -1228,6 +1228,56 @@ footer .sub-footer .links svg {
   background-position: center center;
 }
 
+.one-blog .one-blog-header {
+  background: #3d8275;
+}
+.one-blog .one-blog-header .one-blog-content {
+  color: #fff;
+  padding-bottom: 277px;
+  padding-top: 35px;
+  text-align: center;
+  height: 50vh;
+}
+.one-blog .one-blog-header .one-blog-content h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 15px;
+}
+.one-blog .blog-image {
+  margin-top: -175px;
+}
+.one-blog .blog-image img {
+  width: 100%;
+  box-shadow: 0 19px 62px 0 rgba(0, 0, 0, 0.22);
+}
+.one-blog .blog-content {
+  margin-top: 50px;
+  padding: 0 25px;
+}
+.one-blog .blog-pagnition .pagenation-flex {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.one-blog .blog-pagnition a {
+  display: flex;
+}
+.one-blog .blog-pagnition a svg {
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+}
+.one-blog .blog-pagnition a span {
+  display: block;
+}
+.one-blog .blog-pagnition .nex {
+  text-align: left;
+}
+.one-blog .blog-pagnition .prev {
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
