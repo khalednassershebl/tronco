@@ -223,9 +223,7 @@
         .upper-header-info {
             display: flex;
             align-items: center;
-            @media (max-width: $max-5) {
-                display: none;
-            }
+
             .temp {
                 border-right: 1px solid #05212c;
                 padding-right: 15px;
@@ -244,11 +242,14 @@
                 padding-left: 15px;
                 display: flex;
                 align-items: center;
+                @media (max-width: $max-5) {
+                    display: none;
+                }
                 svg {
                     height: 18px;
                     width: 18px;
                     fill: #99c73b;
-                    margin: 0 8px;
+                    margin: 0 6px;
                 }
             }
         }

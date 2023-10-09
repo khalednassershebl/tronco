@@ -192,9 +192,16 @@ a {
 
 //-------- [ Start Index ] --------
 
-// [lang="ar"] {
-
-// }
+[lang="ar"] {
+    .toggle-font-family {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+[lang="en"] {
+    .toggle-font-family {
+        font-family: "cairo";
+    }
+}
 
 
 // Images Gallery ( Global )

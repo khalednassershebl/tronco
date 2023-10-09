@@ -392,11 +392,6 @@ p.text a {
   display: flex;
   align-items: center;
 }
-@media (max-width: 575.98px) {
-  .upper-header .upper-header-content .upper-header-info {
-    display: none;
-  }
-}
 .upper-header .upper-header-content .upper-header-info .temp {
   border-right: 1px solid #05212c;
   padding-right: 15px;
@@ -416,11 +411,16 @@ p.text a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 575.98px) {
+  .upper-header .upper-header-content .upper-header-info .date {
+    display: none;
+  }
+}
 .upper-header .upper-header-content .upper-header-info .date svg {
   height: 18px;
   width: 18px;
   fill: #99c73b;
-  margin: 0 8px;
+  margin: 0 6px;
 }
 
 .header {
@@ -1523,6 +1523,14 @@ a:hover {
 }
 .req-one-ser svg {
   fill: #FFF;
+}
+
+[lang=ar] .toggle-font-family {
+  font-family: "Montserrat", sans-serif;
+}
+
+[lang=en] .toggle-font-family {
+  font-family: "cairo";
 }
 
 .lg-backdrop,
