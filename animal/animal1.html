@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Main Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Important Meta Tags -->
+    <meta name="author" content="https://www.menamedia.io" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+    <!-- Library Styles -->
+    <link rel="stylesheet" href="../assets/scss/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/scss/libs/lightgallery.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../main.css" />
+
+    <!-- Page Title & Icon -->
+    <title>Bovine Diet</title>
+    <link rel="shortcut icon" href="../assets/images/icon.png" />
+
+</head>
+
+<body>
+
+    <!-- ---- [ Start Header ] ---- -->
+
+    <div class="upper-header">
+        <div class="container">
+            <div class="upper-header-content">
+                <div class="upper-header-actions">
+                    <div class="nav-actions">
+                        <form action="">
+                            <div class="form-group">
+                                <input class="search-input" type="text" class="form-control" placeholder="Search" />
+                                <div class="search-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="lang">
+                        <div class="switch-langs">
+                            <div class="hover-drop">
+                                <span>
+                                    <div class="lang-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M2.04932 13.0001H7.52725C7.70624 16.2689 8.7574 19.3054 10.452 21.881C5.98761 21.1872 2.5001 17.5403 2.04932 13.0001ZM2.04932 11.0001C2.5001 6.4598 5.98761 2.81288 10.452 2.11914C8.7574 4.69468 7.70624 7.73123 7.52725 11.0001H2.04932ZM21.9506 11.0001H16.4726C16.2936 7.73123 15.2425 4.69468 13.5479 2.11914C18.0123 2.81288 21.4998 6.4598 21.9506 11.0001ZM21.9506 13.0001C21.4998 17.5403 18.0123 21.1872 13.5479 21.881C15.2425 19.3054 16.2936 16.2689 16.4726 13.0001H21.9506ZM9.53068 13.0001H14.4692C14.2976 15.7829 13.4146 18.3733 11.9999 20.5916C10.5852 18.3733 9.70229 15.7829 9.53068 13.0001ZM9.53068 11.0001C9.70229 8.21722 10.5852 5.62684 11.9999 3.40853C13.4146 5.62684 14.2976 8.21722 14.4692 11.0001H9.53068Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span>English</span>
+                                </span>
+                                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                    height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" />
+                                </svg>
+                                <div class="li-links">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">العربية</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">English</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upper-header-info">
+                    <div class="temp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z">
+                            </path>
+                        </svg>
+                        01113305996
+                    </div>
+                    <div class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z">
+                            </path>
+                        </svg>
+                        info@tronco.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <div class="nav-mobile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="nav-logo-container">
+                        <a href="index.html">
+                            <img class="main-logo" src="../assets/images/logo.png" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="nav-search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="nav-links">
+                    <ul class="list-unstyled">
+                        <li class="nav-link-active"><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Forte Method</a></li>
+                        <li>
+                            <a href="#">
+                                <span>Animals</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" />
+                                </svg>
+                            </a>
+                            <div class="nav-link-dropdown">
+                                <ul class="list-unstyled p-0">
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">page 1</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">page 2</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">page 3</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">page 4 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="big-nav big-nav-hiddin">
+        <div class="nav-links">
+            <div class="big-nav-header-title">
+                <div class="nav-logo-container">
+                    <a href="index.html">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <span class="close-big-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </span>
+            </div>
+
+            <div class="big-nav-search">
+                <div class="nav-search">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <div class="search-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <ul class="list-unstyled p-0">
+                <li class="">
+                    <!-- li-active -->
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">Home</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">About Us</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">Forte Methos</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">Animals</a>
+                        </div>
+                        <div class="li-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="nav-link-popup big-nav-hiddin">
+                        <div class="big-nav-header-title">
+                            <span class="close-link-popup">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <ul class="list-unstyled p-0">
+                            <li class="">
+                                <!-- li-active -->
+                                <div class="li-link">
+                                    <div class="link-info">
+                                        <a href="categories/categories.html">page 1</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li-link">
+                                    <div class="link-info">
+                                        <a href="categories/categories.html">page 2</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li-link">
+                                    <div class="link-info">
+                                        <a href="categories/categories.html">page 3</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li-link">
+                                    <div class="link-info">
+                                        <a href="categories/categories.html">page 4</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">Products</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">Blogs</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="li-link">
+                        <div class="link-info">
+                            <a href="categories/categories.html">Contacts</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="close-overlay"></div>
+
+    <div class="home-header">
+        <div class="header-overlay">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(../assets/images/animal1.jpg)">
+                        <div class="swiper-slider-content">
+                            <div class="swiper-slider-content-inner">
+                                <h1>Bovine Diet</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---- [ End Header ] ---- -->
+
+
+    <!-- ---- [ Start Content ] ---- -->
+
+    <div class="content">
+
+        <div class="two-col-content">
+
+            <div class="container">
+
+                <div class="two-col-contnt-top-section">
+                    <p style="text-align: center;"><span
+                            style="color: #3c8275; margin-bottom: 75px; display: block;">TERRITORY</span>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p><img src="../assets/images/alimentazione-bovini-1.webp"></p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2 style="font-size: 24px;"><strong>Ruminant Digestion and Characteristics</strong></h2>
+                        <p style="text-align: justify;"><strong>Bovines</strong> are in the mammal class of the
+                            herbivore family, in the suborder of ruminants. Their diet is <strong>entirely
+                                vegetarian</strong> and they have a digestive apparatus characterised by a stomach which
+                            is divided into four main areas, with only the last one in charge of actual digestion. This
+                            kind of animal, in which the assimilation of food plays a fundamental role, requires
+                            specific care when it comes to diet.</p>
+                        <p style="text-align: justify;">What a bovine eats must be assimilated through rumination in
+                            order for it to be transformed into energy and therefore into nourishment that is used for
+                            the animal's activities.</p>
+                    </div>
+                </div>
+
+                <div class="two-col-bottom-content">
+                    <div style="font-size: 16px; text-align: justify;">A <strong>bovine's stomach</strong> is made up of
+                        three nonglandular forestomachs, known as the reticulum, rumen, and omasum, followed by a normal
+                        <strong>glandular stomach</strong>, called the abomasum. The predominant characteristic of
+                        ruminants is the <strong>reflex through which the animal regurgitates, back into its mouth, the
+                            plant material</strong> that was roughly chewed during initial ingestion. It is then finely
+                        <strong>ground</strong>, re-wet with <strong>saliva</strong>, and <strong>swallowed</strong>
+                        once more <strong>in order to facilitate the fermentation process</strong> carried out by
+                        microorganisms in the forestomachs.
+                    </div>
+                    <div style="font-size: 16px; text-align: justify;"><br><strong>This process is known as
+                            rumination</strong> and it is this very characteristic that has made it possible for cows to
+                        survive in every natural environment.</div>
+                    <div style="font-size: 16px; text-align: justify;">&nbsp;</div>
+                    <div style="font-size: 16px; text-align: justify;">&nbsp;</div>
+                    <h2 style="font-size: 24px; text-align: justify;"><strong>Dairy Cows and Bovines: What Affects
+                            Productivity</strong></h2>
+                    <div style="text-align: justify; font-size: 16px;">The origins of a cow that will be used for milk
+                        production, as well as all of its physical and physiological characteristics, affect both its
+                        milk production and yield. In other words, <strong>the genetic heritage of a cow is what defines
+                            its productivity</strong>, or rather the maximum amount of milk that the animal can produce.
+                        In addition to the resources which are the result of its genetic heritage and the environmental
+                        conditions in which it lives, a cow's maximum milk production is also obtained <strong>through a
+                            proper diet</strong>.</div>
+                    <div style="text-align: justify; font-size: 16px;">&nbsp;</div>
+                    <div style="text-align: justify; font-size: 16px;">This must ensure a proper qualitative and
+                        quantitative supply of the nutrients that the animal requires in order to remain healthy and in
+                        the proper physical condition for its specific phase of life so that it can reproduce and
+                        provide the expected production results.</div>
+                    <div style="text-align: justify; font-size: 16px;">&nbsp;</div>
+                    <div style="text-align: justify; font-size: 16px;">A bovine's nutritional requirements vary
+                        specifically depending on the various physiological phases that the animal goes through during
+                        the course of its life:</div>
+                    <div style="text-align: justify;">
+                        <ul style="font-size: 16px;">
+                            <li aria-level="1">weening;</li>
+                            <li aria-level="1">growth;</li>
+                            <li aria-level="1">insemination and pregnancy;</li>
+                            <li aria-level="1">lactation;</li>
+                            <li aria-level="1">dry period.</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: justify; font-size: 16px;">An animal's nutritional needs must, therefore, be
+                        completely met in terms of protein, necessary minerals, trace minerals, vitamins, and energy
+                        that can be assimilated by the organism. These <strong>elements</strong> must also be present in
+                        the <strong>plant-based fibrous component consumed by each bovine</strong>, or rather that which
+                        <strong>makes rumination possible</strong>.
+                    </div>
+                    <div style="text-align: justify; font-size: 16px;">&nbsp;</div>
+                    <div style="text-align: justify; font-size: 16px;">&nbsp;</div>
+                    <h2 style="font-size: 24px; text-align: justify;"><strong>How to evaluate a bovine's Nutritional
+                            Needs</strong></h2>
+                    <div style="font-size: 16px; text-align: justify;">What a bovine <strong>assimilates comes from the
+                            substances created by the fermentation which takes place within the rumen thanks to the work
+                            of the ruminal microbiome</strong>. This is a complex ecosystem made up mostly of bacteria
+                        (more than 200 different species), some species of protozoans, and fungi, all of which live in
+                        total or partial absence of oxygen.<br><br><strong>The Biomass Determines the Source of
+                            Protein</strong><br>The <strong>ruminal biomass</strong> is absorbed by the intestine and is
+                        the protein that can be metabolised. <strong>Fatty acids</strong> also contribute to bovine
+                        health; this nutrient is absorbed through the ruminal walls and is of fundamental importance for
+                        milk production</div>
+                    <div style="font-size: 16px; text-align: justify;">&nbsp;</div>
+                    <div style="font-size: 16px; text-align: justify;"><strong>What the animal actually uses as
+                            nourishment is not enough to ensure its wellness</strong>, nor is it enough for milk
+                        production or to fulfill all of its other essential metabolic functions.</div>
+                    <div style="font-size: 16px; text-align: justify;">&nbsp;</div>
+                    <div style="font-size: 16px; text-align: justify;">To make up for this deficiency, <strong>ruminants
+                            are given</strong> rations from <a href="#" rel="noopener">plant-based
+                            protein sources</a> which resemble, as much as possible, the
+                        amino-acid composition resulting from the biomass of bacterial origin. <strong>This supplement
+                            is equal to 30-40%</strong> of their diet.</div>
+                    <div style="font-size: 16px; text-align: justify;"><br>Becoming familiar with the digestive
+                        characteristics of ruminants is extremely important to establishing how to fully satisfy a dairy
+                        cow's energy requirements in order to maximise its milk production.</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- ---- [ End Content ] ---- -->
+
+
+    <!-- ---- [ Start Footer ] ---- -->
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-r p-0">
+                    <div class="footer-col">
+                        <h3 class="Footer-head"><a href="#" class="footer-logo"><img src="../assets/images/logo.png"
+                                    alt=""> </a></h3>
+                        <p class="footer-address">FORTE MEDICA is a trademark of CONDUZIONI AZIENDE AGRICOLE FORTE
+                            S.a.r.l.
+
+                        </p>
+                        <p class="footer-address">Via Marina 9, 45019 Taglio di PO (RO), Italy
+
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="font-en"><span>TEL : </span>01007056732</li>
+                            <li class="font-en"><span>HOTLINE : </span>01007056732</li>
+                            <li class="font-en"><span>EMAIL : </span>info@tronco.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                    <div class="footer-col">
+                        <!-- <h3 class="Footer-head"><a href="#">Products</a></h3> -->
+                        <ul class="list-unstyled">
+                            <li><a href="#">FORTE VALUE</a></li>
+                            <li><a href="#">FORTE METHOD</a></li>
+                            <li><a href="#">FORTE FORAGE</a></li>
+                            <li><a href="#">ANIMAL WELL-BEING</a></li>
+                            <li><a href="#">ANIMAL NUTRITION AND WEALTH</a></li>
+                            <li><a href="#">STORIES</a></li>
+                            <li><a href="#">FOLLOW US</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                    <div class="footer-col">
+                        <!-- <h3 class="Footer-head"><a href="#">About </a></h3> -->
+                        <ul class="list-unstyled">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                    <div class="footer-col">
+                        <ul class="list-unstyled">
+                            <li><a href="#">ASK US</a></li>
+                            <li><a href="#">DOWNLOADS</a></li>
+                            <li><a href="#">NEWSLETTER</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 order-2 order-md-1 text-center">
+                        <p class="copy text-center">Cod. Fisc. e P. IVA 00041530296 - R.E.A. RO n. 58832 - Reg. Soc.
+                            Trib. RO n. 889
+                            - cap. soc. i.v. € 100.000,00
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- ---- [ End Footer ] ---- -->
+
+
+    <!-- Main Scripts -->
+    <script src="../assets/js/libs/jquery-3.6.3.min.js"></script>
+    <script src="../assets/js/libs/bootstrap.min.js"></script>
+    <script src="../assets/js/libs/popper.js"></script>
+    <script src="../main.js"></script>
+    <!-- Addition Scripts -->
+
+    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            effect: "slide", // flip, fade, coverflow, slide
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

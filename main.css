@@ -1288,6 +1288,94 @@ footer .sub-footer .links svg {
   margin: auto;
 }
 
+.about-section-header {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+.about-section-header h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.about-section-header span {
+  color: #3c8275;
+}
+
+.two-col-contnt-top-section h2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+.two-col-contnt-top-section p {
+  color: #3d8275;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.fulll__widthcol-banner {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.two-cols-text h3 {
+  color: #3e5351;
+}
+
+.fullscreen-bg {
+  overflow: hidden;
+  height: calc(100vh - 128px);
+  width: 100%;
+  position: relative;
+}
+.fullscreen-bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.26), rgba(0, 85, 103, 0));
+  z-index: 2;
+}
+.fullscreen-bg .fullscreen-bg-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+}
+.fullscreen-bg .fullscreen-bg-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  display: block;
+}
+.fullscreen-bg .fullscreen-bg-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+}
+
+.fullscreen-bg__video {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.4);
+}
+
+.about-page .two-col-content-more h3 span {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.about-page .two-col-content-more .cus-text {
+  color: #252425;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
 }
